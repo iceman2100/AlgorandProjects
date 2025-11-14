@@ -1,5 +1,5 @@
 
-# 🚀 StreamFi - Real-Time Payment Streaming on Algorand
+# StreamFi - Real-Time Payment Streaming on Algorand
 
 A decentralized payment streaming platform built on Algorand blockchain, enabling continuous, second-by-second token distribution.
 
