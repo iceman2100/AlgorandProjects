@@ -115,6 +115,26 @@ Backend can prepare opt-in txn when required.
 Wallet signs → broadcasts → employee can now receive tokens.
 
 ---
+### Wallet Architecture (Prototype Simplification)
+
+StreamFi uses a minimal wallet architecture to keep the prototype simple and fast for demo use:
+
+- **Company Wallet**  
+  A single funded Algorand TestNet wallet.  
+  It holds STRM tokens and signs outgoing ARC-20 transfers when an employee claims.
+
+- **Employee Wallet (Shared Address)**  
+  All employee profiles use the same Algorand address.  
+  This drastically simplifies:
+  - ASA opt-ins  
+  - balancing testnet funds  
+  - repeating claims for demo purposes  
+
+Although simplified, the backend still performs real ARC-20 transfers and real TestNet transactions.
+
+In a production-grade system, each employee would have a unique wallet address.
+
+---
 ## 6. API Specification
 GET /company
 {
