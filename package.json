@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@blockshake/defly-connect": "^1.2.1",
+    "@perawallet/connect": "^1.4.2",
+    "@randlabs/myalgo-connect": "^1.4.2",
+    "@txnlab/use-wallet": "^4.1.0",
+    "lz-string": "^1.5.0"
+  }
+}

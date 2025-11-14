@@ -1,0 +1,20 @@
+``````txt
+# StreamFi - Algorand Payment Streaming Platform
+# Python Dependencies
+
+# Algorand SDK
+py-algorand-sdk==2.11.1
+
+# PyTeal - Smart Contract Language
+pyteal==0.24.1
+
+# Required by py-algorand-sdk
+pycryptodomex>=3.6.0
+pynacl>=1.4.0
+msgpack>=1.0.0
+
+# PyTeal dependencies
+docstring-parser==0.14.1
+executing==1.2.0
+semantic-version>=2.9.0
+tabulate>=0.9.0

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamFi - Payment Streaming dApp</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div>
+        <h1 class="hero-title">StreamFi Payment Streaming</h1>
+        <p class="hero-description">
+          Real-time token distribution for transparent wage payments on Algorand blockchain
+        </p>
+        
+        <div class="token-banner">
+          <div class="token-banner-content">
+            <div class="token-info-left">
+              <h3>Live on Algorand TestNet</h3>
+              <div class="token-info">
+                <p><strong>Smart Contract ID:</strong> 749515555</p>
+                <p><strong>ARC-20 Token ID:</strong> 749531304</p>
+                <p><strong>Token Symbol:</strong> STRM</p>
+              </div>
+              <div class="token-buttons">
+                <a href="#employee-cards" class="get-started-btn">
+                  Get Started
+                </a>
+                <a href="https://testnet.explorer.perawallet.app/asset/749531304/" target="_blank" class="explorer-link">
+                  View on Explorer 
+                </a>
+              </div>
+            </div>
+            <div class="token-logo zoom-ani">
+              <img src="assets/AlgoSymb.png" alt="Algorand Logo" />
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="illustration-container">
+        <img src="assets/cylineder3.png" alt="Blockchain Database" class="cylinder-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Employee Cards Section -->
+  <section class="beige-section">
+    <h2 class="section-title">Employee Payment Dashboard</h2>
+    <div class="employee-grid" id="employee-cards"></div>
+  </section>
+
+  <script src="script_algorand.js"></script>
+</body>
+</html>
