@@ -226,14 +226,21 @@ CORS errors → ensure flask_cors enabled
 Deployment issues → check environment variables on Render
 
 ---
-## 11. Extension Ideas
+## 11. Using the Algorand Pre-Faucet Dispenser
+- You can use the Algorand Pre-Faucet Dispenser to receive 10 free Algorand TestNet tokens.
+- These tokens are useful when you are creating a new wallet or when you want to dispense ALGOs into your existing Pera Wallet for testing purposes.
+- Simply visit the Algorand TestNet pre-faucet dispenser page, enter your wallet address, and the tokens will be sent instantly to your TestNet account.
+- you can refer this link https://bank.testnet.algorand.network/
+
+---
+## 12. Extension Ideas
 - Continuous automated token streaming
 - Admin HR dashboards
 - Postgres database for persistence
 - Notification system for claim events
 
 ---
-## 12. Useful Commands
+## 13. Useful Commands
 
 Create token:
 
