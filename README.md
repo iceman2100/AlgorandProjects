@@ -31,6 +31,7 @@ This prototype keeps everything intentionally simple while demonstrating real on
 ---
 
 ## Folder Structure
+```plaintext
 
 streamfi-simple/
 │
@@ -69,7 +70,7 @@ Backend (Flask + Algorand SDK)
 | Signed transactions
 v
 Algorand TestNet Blockchain
-
+```
 yaml
 Copy code
 
@@ -177,3 +178,36 @@ Copy code
 
 This is a functional demonstration for learning and hackathon presentation.  
 It shows how Algorand can be used for micro-transactions, streaming logic, and transparent salary distribution with minimal infrastructure.
+
+## Output Preview
+
+The StreamFi prototype provides a simple employee dashboard where users can:
+
+- Connect their Pera Wallet
+- View their claimable STRM token balance
+- Initiate a claim and sign the transaction in Pera Wallet
+- View confirmation on Algorand TestNet Explorer
+
+Typical frontend output includes:
+- Company wallet address
+- Employee address and claimable amount
+- Claim button that triggers WalletConnect signing flow
+- Success message after the transaction is confirmed
+
+Backend output includes:
+- Flask server logs for API calls
+- Transaction objects generated for claims
+- Debug information for employees and company metadata
+
+For visual understanding, refer to screenshots or browser output when running the frontend and backend locally.
+
+---
+
+## Additional Documentation
+
+For a detailed explanation of the full system architecture, execution flow, API behavior, folder structure, and deployment process, refer to:
+
+**ARCHITECTURE.md**
+
+This file contains the complete breakdown of how StreamFi is designed and how every component interacts with Algorand TestNet.
+
