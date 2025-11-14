@@ -122,27 +122,7 @@ http://localhost:8080
 
 ## Deployment Overview
 
-### Backend (Render)
-
-Build Command:
-pip install -r requirements.txt
-
-
-Start Command:
-gunicorn app:app
-
-
-
-Project Root:
-backend
-
-
-
-### Frontend (Vercel)
-
-- Select the frontend folder as project root.
-- Framework preset: None (Static Site).
-- Deploy.
+need to be updated(sam).
 
 ---
 
