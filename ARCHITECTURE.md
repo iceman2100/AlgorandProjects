@@ -1,6 +1,6 @@
 # StreamFi Architecture Documentation
 
-This document describes the complete technical architecture of the StreamFi prototype. It covers system layers, execution flows, API details, environment setup, deployment paths, and design rationale.
+This document describes the complete technical architecture of the StreamFi prototype. It covers system layers, execution flows, API details, environment setup, deployment paths, and design .
 
 ---
 
@@ -18,15 +18,11 @@ The system is composed of three tightly connected layers:
 3. **Blockchain Layer**  
    Algorand TestNet. Contains the STRM ARC-20 token and a simple PyTEAL-based application for demonstration.
 
-Users interact with the frontend.  
-The frontend calls the backend for employee and claim information.  
-The backend prepares transaction payloads, which the wallet signs and broadcasts on-chain.
+Users interact with the frontend.The frontend calls the backend for employee and claim information.The backend prepares transaction payloads, which the wallet signs and broadcasts on-chain.
 
 ---
 
 ## 2. Architecture Diagram
-
-Include your generated diagram here:
 
 <img width="1886" height="899" alt="image" src="https://github.com/user-attachments/assets/bb74c104-e22c-4090-9b94-9cce7898127f" />
 
@@ -176,22 +172,11 @@ GET /transactions
 Returns recent transaction IDs and statuses.
 
 ---
-## 7. Environment Variables
 
-Create .env or configure Render environment:
-
-ALGOD_API_URL=https://testnet-algorand.api.purestake.io/ps2
-ALGOD_API_KEY=<PURESTAKE_KEY>
-INDEXER_URL=https://testnet-algorand.api.purestake.io/idx2
-COMPANY_PRIVATE_KEY=<local-dev-only>
-COMPANY_ADDRESS=<funded-address>
-ASSET_ID=749531304
-APP_ID=749515555
-FLASK_ENV=production
 
 ---
-## 8. Running the System Locally
-8.1 Backend
+## 7. Running the System Locally
+7.1 Backend
 cd streamfi-simple/backend
 python -m venv venv
 .\venv\Scripts\activate
@@ -203,7 +188,7 @@ Expected:
 
 http://127.0.0.1:5000
 
-8.2 Frontend
+7.2 Frontend
 
 Python static server:
 
@@ -219,36 +204,21 @@ http://localhost:8080
 Or use VS Code Live Server.
 
 ---
-## 9. Deployment
-9.1 Backend → Render
-
-Render settings:
-
-Root Directory: streamfi-simple/backend
-Build Command: pip install -r requirements.txt
-Start Command: gunicorn app:app --bind 0.0.0.0:$PORT
-
-
-Add environment variables in Render dashboard.
-
-9.2 Frontend → Vercel
-Root Directory: streamfi-simple/frontend
-Framework Preset: None (Static)
-Build Command: none
-Output Directory: .
+## 8. Deployment
+"need to be updated"
 
 
 Update script_algorand.js to point to Render backend URL.
 
 ---
-## 10. Security Notes
+## 9. Security Notes
 - Never expose private keys to frontend
 - Backend should sign only admin-level transactions
 - User-initiated transactions must be signed in PeraWallet
 - Always use HTTPS endpoints
 
 ---
-## 11. Debugging
+## 10. Debugging
 Wallet failing to connect → check WalletConnect version
 Opt-in failure → ensure employee opted_in=true
 Transaction rejected → verify fees, validity rounds
@@ -256,14 +226,14 @@ CORS errors → ensure flask_cors enabled
 Deployment issues → check environment variables on Render
 
 ---
-## 12. Extension Ideas
+## 11. Extension Ideas
 - Continuous automated token streaming
 - Admin HR dashboards
 - Postgres database for persistence
 - Notification system for claim events
 
 ---
-## 13. Useful Commands
+## 12. Useful Commands
 
 Create token:
 
