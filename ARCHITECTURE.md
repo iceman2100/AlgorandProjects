@@ -219,11 +219,11 @@ Update script_algorand.js to point to Render backend URL.
 
 ---
 ## 10. Debugging
-Wallet failing to connect → check WalletConnect version
-Opt-in failure → ensure employee opted_in=true
-Transaction rejected → verify fees, validity rounds
-CORS errors → ensure flask_cors enabled
-Deployment issues → check environment variables on Render
+- Wallet failing to connect → check WalletConnect version
+- Opt-in failure → ensure employee opted_in=true
+- Transaction rejected → verify fees, validity rounds
+- CORS errors → ensure flask_cors enabled
+- Deployment issues → check environment variables on Render
 
 ---
 ## 11. Using the Algorand Pre-Faucet Dispenser
