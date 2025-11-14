@@ -1,7 +1,6 @@
 # ARCHITECTURE.md
 StreamFi — Detailed Architecture and Build Instructions
-
-> Diagram (place near the top of this file):  
+ 
 > <img width="1886" height="899" alt="image" src="https://github.com/user-attachments/assets/6d6ab08f-f6e1-45d5-aa87-5c7b99cef70a" />
 
 
