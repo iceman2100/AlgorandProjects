@@ -30,6 +30,15 @@ This prototype keeps everything intentionally simple while demonstrating real on
 
 ---
 
+### Architecture Diagram
+
+Include your generated diagram here:
+
+<img width="1886" height="899" alt="image" src="https://github.com/user-attachments/assets/bb74c104-e22c-4090-9b94-9cce7898127f" />
+
+---
+
+
 ## Folder Structure
 ```plaintext
 
@@ -71,8 +80,7 @@ Backend (Flask + Algorand SDK)
 v
 Algorand TestNet Blockchain
 ```
-yaml
-Copy code
+
 
 Key points:
 - The frontend handles wallet connection and user actions.
