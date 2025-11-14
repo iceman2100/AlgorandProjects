@@ -1,109 +1,179 @@
+# StreamFi — Algorand-Powered Salary Streaming (Hackathon Prototype)
 
-# 🚀 StreamFi - Real-Time Payment Streaming on Algorand
+StreamFi is a lightweight decentralized application built on the Algorand TestNet.  
+It showcases automated salary streaming using an ARC-20 token, Pera Wallet, and a minimal Flask backend.  
+This prototype keeps everything intentionally simple while demonstrating real on-chain interactions.
 
-A decentralized payment streaming platform built on Algorand blockchain, enabling continuous, second-by-second token distribution.
+---
 
-## 🏆 Hackathon Project
+## Features
 
-This project demonstrates the implementation of ARC-20 token standard with a fully functional smart contract and web interface.
+### Salary Streaming (Prototype Logic)
+- A single company wallet funds six employee wallets (same wallet reused for simplicity).
+- The backend calculates claimable balance for each employee.
+- Employees can click "Claim" to receive ARC-20 tokens.
+- Transactions are executed through Pera Wallet on Algorand TestNet.
 
-## ✨ Features
+### Algorand Integration
+- Uses a custom ARC-20 token with Asset ID: 749531304.
+- Integrated with Pera Wallet via WalletConnect v2.
+- Backend uses the Algorand Python SDK for transaction creation and signing.
 
-- ⛓️ **ARC-20 Token**: StreamFi Payment Token (STRM) - Asset ID: 749531304
-- 📜 **Smart Contract**: PyTeal-based payment streaming logic - App ID: 749515555
-- 🎨 **Interactive UI**: Real-time token accumulation and claiming
-- 💼 **Multi-User Support**: 6 employees with different payment rates
-- 🔐 **Wallet Integration**: Pera Wallet compatible
+### Simple Frontend
+- Built with HTML, CSS, and vanilla JavaScript.
+- Shows employee balance, status, and supports claiming tokens.
 
-## 🏗️ Architecture
+### Lightweight Backend
+- Flask REST API.
+- Handles Algorand logic: balances, claim calculation, transaction signing.
+- Designed to stay simple for hackathon use.
+
+---
+
+## Folder Structure
 
 streamfi-simple/
-├── contracts/ # Smart contract backend
-│ ├── streamfi.py # PyTeal smart contract
-│ ├── deploy.py # Deployment script
-│ └── create_arc20_token.py # ARC-20 token creator
 │
-└── frontend/ # HTML/CSS/JS frontend
-├── index.html
-├── script.js
-├── styles.css
-└── assets/
+├── backend/
+│ ├── app.py
+│ ├── create_arc20_token.py
+│ ├── employees.json
+│ └── additional SDK utility scripts
+│
+├── contracts/
+│ ├── create_employees.py
+│ ├── test_transaction.py
+│ └── experimental contract scripts
+│
+├── frontend/
+│ ├── index.html
+│ ├── styles.css
+│ ├── script_algorand.js
+│ └── assets/
+│
+└── README.md
 
-text
+yaml
+Copy code
 
-## 🛠️ Tech Stack
+---
 
-- **Blockchain**: Algorand TestNet
-- **Smart Contracts**: PyTeal
-- **Token Standard**: ARC-20
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
-- **SDK**: py-algorand-sdk
+## Architecture (Hackathon-Simple Overview)
 
-## 📋 Prerequisites
+Frontend (HTML, JS)
+|
+| REST API calls
+v
+Backend (Flask + Algorand SDK)
+|
+| Signed transactions
+v
+Algorand TestNet Blockchain
 
-- Python 3.13+
-- Algorand TestNet account with funds
+yaml
+Copy code
 
-## 🚀 Installation
+Key points:
+- The frontend handles wallet connection and user actions.
+- The backend prepares and signs Algorand transactions.
+- ARC-20 tokens are transferred from the company wallet to employee wallets.
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/YOUR_USERNAME/streamfi-simple.git
-cd streamfi-simple
-Install Python dependencies
+---
 
-text
+## Local Development
+
+### Backend Setup
+
+cd backend
+python -m venv venv
+.\venv\Scripts\activate
 pip install -r requirements.txt
-Fund your TestNet account
-Get free TestNet ALGO from: https://bank.testnet.algorand.network/
+python app.py
 
-💻 Usage
-Deploy Smart Contract
-bash
-cd contracts
-python deploy.py
-Create ARC-20 Token
-text
-python create_arc20_token.py
-Run Frontend
-bash
+yaml
+Copy code
+
+Backend runs at:
+
+http://127.0.0.1:5000
+
+pgsql
+Copy code
+
+### Frontend Setup
+
+Option A: VSCode Live Server  
+Right-click `index.html` → Open with Live Server
+
+Option B: Python HTTP Server
+
 cd frontend
 python -m http.server 8080
-Open browser: http://localhost:8080
 
-🔗 Live Deployment (TestNet)
-Smart Contract: App ID 749515555
+arduino
+Copy code
 
-ARC-20 Token: Asset ID 749531304
+Then open:
 
-👥 Team Members 
-Anirudh - Blockchain Developer
+http://localhost:8080
 
-Saksham - Frontend Engineer
+yaml
+Copy code
 
+---
 
-🎯 Use Cases
-💼 Freelancer platforms (pay per minute)
+## Deployment Overview
 
-🚗 Gig economy (Uber, DoorDash)
+### Backend (Render)
 
-📺 Subscription services
+Build Command:
+pip install -r requirements.txt
 
-💰 Modern payroll systems
+powershell
+Copy code
 
-🎮 Gaming rewards
+Start Command:
+gunicorn app:app
 
-📝 License
-MIT License - see LICENSE file for details
+yaml
+Copy code
 
-🙏 Acknowledgments
-Algorand Foundation
+Project Root:
+backend
 
-PyTeal Documentation
+yaml
+Copy code
 
-Algorand Developer Community
+### Frontend (Vercel)
 
-🔐 Security Note
-NEVER commit private keys or mnemonics to Git! Use environment variables or .env files (already in .gitignore).
+- Select the frontend folder as project root.
+- Framework preset: None (Static Site).
+- Deploy.
 
-Built with ❤️ for Algorand Hackathon 2025
+---
+
+## Testing Steps
+
+1. Connect Pera Wallet from the frontend.  
+2. Confirm the wallet address is detected.  
+3. Wait for backend to compute claimable STRM tokens.  
+4. Click "Claim Tokens".  
+5. Approve the transaction in Pera Wallet.  
+6. Check Algorand TestNet Explorer for transaction confirmation.
+
+---
+
+## Future Improvements
+
+- Real-time continuous streaming instead of fixed claim logic.
+- Multiple employees with real independent wallets.
+- Persistent database for employee data and claim history.
+- Improved dashboard for HR and admin roles.
+- Expanded support for more Algorand ARC standards.
+
+---
+
+## Purpose of This Prototype
+
+This is a functional demonstration for learning and hackathon presentation.  
+It shows how Algorand can be used for micro-transactions, streaming logic, and transparent salary distribution with minimal infrastructure.
