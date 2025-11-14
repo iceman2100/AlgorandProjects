@@ -62,11 +62,8 @@ streamfi-simple/
 │
 └── README.md
 
-yaml
-Copy code
-
----
-
+```
+```plaintext
 ## Architecture (Hackathon-Simple Overview)
 
 Frontend (HTML, JS)
@@ -79,7 +76,6 @@ Backend (Flask + Algorand SDK)
 v
 Algorand TestNet Blockchain
 ```
-
 
 Key points:
 - The frontend handles wallet connection and user actions.
@@ -98,15 +94,11 @@ python -m venv venv
 pip install -r requirements.txt
 python app.py
 
-yaml
-Copy code
 
 Backend runs at:
 
 http://127.0.0.1:5000
 
-pgsql
-Copy code
 
 ### Frontend Setup
 
@@ -118,15 +110,13 @@ Option B: Python HTTP Server
 cd frontend
 python -m http.server 8080
 
-arduino
-Copy code
+
 
 Then open:
 
 http://localhost:8080
 
-yaml
-Copy code
+
 
 ---
 
@@ -137,20 +127,16 @@ Copy code
 Build Command:
 pip install -r requirements.txt
 
-powershell
-Copy code
 
 Start Command:
 gunicorn app:app
 
-yaml
-Copy code
+
 
 Project Root:
 backend
 
-yaml
-Copy code
+
 
 ### Frontend (Vercel)
 
