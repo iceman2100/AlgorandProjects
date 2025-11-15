@@ -209,6 +209,15 @@ you can check here(in Transactions) --> https://testnet.explorer.perawallet.app/
 
 <img width="1861" height="587" alt="image" src="https://github.com/user-attachments/assets/25792d97-bef1-4363-b3a6-08253b2c5f8d" />
 
+- Salary Transaction History in lora Explorer(on testnet)
+  
+  <img width="1894" height="596" alt="image" src="https://github.com/user-attachments/assets/46e9c77e-2fd1-4d49-9650-2a5d3962f2f4" />
+  <img width="1896" height="1052" alt="image" src="https://github.com/user-attachments/assets/66b4265c-d9e0-40c9-961f-8354c171b7f8" />
+
+- you can refer this link --> https://lora.algokit.io/testnet/account/4PQJHM4DUUXQLKRZPD36TR53UZIXT7QGBGNMKLWFDYV3ZM7PRVMNWWUIWM
+
+
+
 
 For a more detailed and expanded explanation of the architecture, flows, smart contract logic, and wallet behavior,  
 **refer to the full documentation in `ARCHITECTURE.md`.**
