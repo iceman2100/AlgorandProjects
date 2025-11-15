@@ -1,4 +1,4 @@
-# StreamFi — Algorand-Powered Salary Streaming (Hackathon Prototype)
+# StreamFi Algorand-Powered Salary Streaming (Hackathon Prototype)
 
 StreamFi is a lightweight decentralized application built on the Algorand TestNet.  
 It showcases automated salary streaming using an ARC-20 token, Pera Wallet, and a minimal Flask backend.  
