@@ -122,7 +122,7 @@ http://localhost:8080
 
 ## Deployment Overview
 
-need to be updated(sam).
+- we able to host only frontend part https://cosmos001s.github.io/AlgorandProjects2
 
 ---
 
