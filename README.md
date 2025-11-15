@@ -229,7 +229,7 @@ For a more detailed and expanded explanation of the architecture, flows, smart c
 ## Acknowledgements
 
     I would like to express my sincere gratitude to Mudassir and Maroti for their constant guidance and support. 
-    Your help in debugging issues and providing direction, especially last year, truly made a big difference. 
+    Your help in debugging issues and providing direction, truly made a big difference. 
     Thank you both for being a part of this journey!
 ---
 ## VIDEO LINK
