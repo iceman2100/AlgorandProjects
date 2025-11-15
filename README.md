@@ -61,6 +61,9 @@ streamfi-simple/
 │ └── assets/
 │
 └── README.md
+│
+└── ARCHITECTURE.md
+
 
 ```
 ```plaintext
@@ -224,9 +227,10 @@ For a more detailed and expanded explanation of the architecture, flows, smart c
 **refer to the full documentation in `ARCHITECTURE.md`.**
 
 ## Acknowledgements
-I would like to express my sincere gratitude to **Mudassir** and **MAROTI** for their constant guidance and support. 
-Your help in debugging issues and providing direction, especially last year, truly made a big difference. 
-Thank you both for being a part of this journey!
+
+    I would like to express my sincere gratitude to Mudassir and Maroti for their constant guidance and support. 
+    Your help in debugging issues and providing direction, especially last year, truly made a big difference. 
+    Thank you both for being a part of this journey!
 ---
 ## VIDEO LINK
 - https://drive.google.com/file/d/1OqwPfevtGiDBpg4aqAP0sipJD7MmSP7N/view?usp=sharing
