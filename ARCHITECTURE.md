@@ -205,7 +205,7 @@ Or use VS Code Live Server.
 
 ---
 ## 8. Deployment
-"need to be updated"
+- we able to host only frontend part https://cosmos001s.github.io/AlgorandProjects2
 
 
 Update script_algorand.js to point to Render backend URL.
