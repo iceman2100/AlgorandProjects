@@ -221,3 +221,8 @@ you can check here(in Transactions) --> https://testnet.explorer.perawallet.app/
 
 For a more detailed and expanded explanation of the architecture, flows, smart contract logic, and wallet behavior,  
 **refer to the full documentation in `ARCHITECTURE.md`.**
+
+## Acknowledgements
+I would like to express my sincere gratitude to **Mudassir** and **MAROTI** for their constant guidance and support. 
+Your help in debugging issues and providing direction, especially last year, truly made a big difference. 
+Thank you both for being a part of this journey!
