@@ -233,4 +233,4 @@ For a more detailed and expanded explanation of the architecture, flows, smart c
     Thank you both for being a part of this journey!
 ---
 ## VIDEO LINK
-- https://drive.google.com/file/d/1OqwPfevtGiDBpg4aqAP0sipJD7MmSP7N/view?usp=sharing
+ - https://drive.google.com/file/d/1GgqDRuBmQre-nOOBbPklq6ndd6TkLvc6/view?usp=sharing
