@@ -67,4 +67,4 @@ app_id = ptx["application-index"]
 
 print(f"\n StreamFI Contract Deployed!")
 print(f" App ID: {app_id}")
-print(f" View on AlgoExplorer: https://testnet.algoexplorer.io/application/{app_id}")
+print(f" View on AlgoExplorer: https://lora.algokit.io/testnet/account/ZX2LBXKXNBRCJVECB7AHU22PPMDIDHCRAPKEVZ5UIUSGZF2LISTEG3IPEQ")
